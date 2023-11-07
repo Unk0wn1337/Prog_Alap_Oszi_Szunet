@@ -9,4 +9,7 @@ import Feladatok
 #Feladatok.nyolcadikFeladat()
 #Feladatok.kilencedikFeladat()
 #Feladatok.tizedikFeladat()
-Feladatok.tizenegyesFeladat()
+#Feladatok.tizenegyesFeladat()
+#Feladatok.tizenkettesFeladat()
+#Feladatok.tizenharmasFeladat(21,120)
+Feladatok.tizennegyesFeladat(412,243)

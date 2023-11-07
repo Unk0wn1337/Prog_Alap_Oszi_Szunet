@@ -1,6 +1,5 @@
 import math
 
-
 def elsoFeladat():
     szam:int = int(input("Szeretnek kerni egy szamot 200 es 920 kozott: "))
     if szam >= 200 and szam <= 920:
@@ -171,3 +170,32 @@ def tizenegyesFeladat():
     print("Ennyi fej:",fej)
     print("Leghosszabb sorozat",legjSor)
 
+def tizenkettesFeladat():
+    szam:int = int(input("Szeretnek kerni egy szamot: "))
+    szamKettoszeres = szam *2
+    osszeg = 0
+    index = 1
+    while index < szamKettoszeres:
+        if szam % index == 0:
+            osszeg += index
+        index+=1
+
+    if osszeg == szamKettoszeres:
+        print("Tokeletes szam")
+    else:
+        print("Nem tokeletes szam")
+
+def tizenharmasFeladat(szamEgy,szamKetto):
+    # Eukledesz algortimus
+
+   while szamKetto:
+       szamEgy, szamKetto = szamKetto, szamEgy % szamKetto
+
+   print(f"Ket szam legnagyobb kozos osztoja: {szamEgy}")
+
+def tizennegyesFeladat(szamEgy,szamKetto):
+    while szamKetto:
+        szamEgy, szamKetto = szamKetto, szamEgy % szamKetto
+        lnkt = szamEgy
+        lkt = (szamEgy * szamKetto) // lnkt
+        print(f"A legkisebb kozos tobbszoros(ok): {lkt}")
